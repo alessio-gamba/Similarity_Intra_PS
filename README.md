@@ -16,7 +16,7 @@ The file with similarities is necessary to proceed in the analysis.
 The second script is 'Analysis_of_similarity.py' (running under Python 2).
 It generates two files: 'Sim_mean.txt' and 'Sim_max.txt' (now in the outputs folder)
 
-The scripts cannot work without this 3 input files:
+The scripts cannot work without 3 input files (not provided here but available):
 1. hp.obo
 2. OMIM_ALL_FREQUENCIES_diseases_to_genes_to_phenotypes.txt
 3. PhenSer.txt
