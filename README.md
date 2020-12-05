@@ -14,7 +14,7 @@ Similarities are calculated based on HPO annotation of diseases.
 The file with similarities is necessary to proceed in the analysis.
 
 The second script is 'Analysis_of_similarity.py' (running under Python 2).
-It generates two files: 'Sim_mean.txt' and 'Sim_max.txt' (now in the outputs folder)
+It generates two files: 'Sim_mean.txt' and 'Sim_max.txt' (now in the outputs folder).
 
 The scripts cannot work without 3 input files (not provided here but available):
 1. hp.obo
@@ -22,4 +22,4 @@ The scripts cannot work without 3 input files (not provided here but available):
 3. PhenSer.txt
 
 The first two are, respectively, the HP ontology and the list of diseases with their terms of annotation. They can be downloaded from the HPO web site.
-The last file contain information on how OMIM diseases are grouped in Phenotypic Series. It is available from OMIM team upon request.
+The last file presents information on how OMIM diseases are grouped in Phenotypic Series. It is available from OMIM team upon request.
