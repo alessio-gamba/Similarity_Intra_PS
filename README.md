@@ -25,8 +25,8 @@ It is subdivided into six modules, as described hereafter (1.1 to 1.6).
 
 A.2 The following outputs generated in SQL
 
-  A.2.1 File 'd_dp.txt' is the D-DP, with 5,818 N (2,118 as D; 3,700 as DP) and 26,539 E (as D-DP pairs). It is derived from table 'd_dp' in module A.1.6 of the SQL script.
-  The  columns are mim_id (Disease, D, in the phen_mim identifier from OMIM), hpo_id (Disease Phenotype, DP, in the hp identifier from HPO) and
+  A.2.1 File 'd_dp.txt' is the D-DP, with 5,818 N (2,116 as D; 3,107 as DP) and 51,657 E (as D-DP pairs). It is derived from table 'd_dp' in module A.1.6 of the SQL script.
+  The  columns are mim_id (Disease, D, in the mim_id identifier from OMIM), hpo_id (Disease Phenotype, DP, in the hp identifier from HPO) and
   ic (information content, IC, of the DP).
   
   A.2.2 File 'ddsn_c.txt' is the complete DDSN-C with 2,116 N (D as OMIM identifers) and 624,610 E (as Di-Dj pairs). It is derived from table ddsn of module A.1.6.3 of SQL.
