@@ -1,8 +1,8 @@
-# Similarity intra Phenotypic Series
+## Similarity intra Phenotypic Series
 
 The datasets reported in the enclosed files have been generated and analyzed, as described in the manuscript entitled ‘The Similarity of Inherited Diseases (I): Clinical Similarity Within the Phenotypic Series’ by Gamba A, Salmona M and Bazzoni G (Submitted to BMC Medical Genomics, Revised December 4, 2020)
 
-## A. SQL folder
+### A. SQL folder
 
 A.1 The file similarity_intra_ps_sql.docx contains
 
@@ -36,7 +36,7 @@ A.2 The following outputs generated in SQL
 
 
 
-## B. Python folder
+### B. Python folder
 
 The two Python scripts, "Sim_calc.py" and "Analysis_of_similarity.py", produce the outputs provided in this folder.
 The scripts are written for Python 3, but they can work also in Python 2 with few minor changes.
@@ -53,11 +53,7 @@ It is not provided here because it is freely available at
 
 3. "PhenSer.txt"
 This file enlists OMIM Phenotypic Series (PS) with their associated diseases (with MIM code). This information is available on the OMIM site (www.omim.org) and the complete list of PS can be obtained upon request to OMIM team. For this reason the file is not provided here.
-The file must be formatted in 4 columns tab-separated, that are:
-1. The PS identifier
-2. the MIM identifier
-3. the Entrez identifier of the gene associated to disease
-4. the Symbol of the Entrez.
+The file must be formatted in 4 columns tab-separated: PS identifier, MIM identifier, Entrez identifier (of disease gene), Symbol.
 Here an example of the PS 174050 with its 3 associated diseases:
 
 PS174050	174050	5589	PRKCSH
