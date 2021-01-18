@@ -1,8 +1,7 @@
-Here a short explication of files provided.
 The two Python scripts, "Sim_calc.py" and "Analysis_of_similarity.py", produce the outputs provided in this folder.
 The scripts are written for Python 3, but they can work also in Python 2 with few minor changes.
 
-INPUT Required
+INPUTS for the two scripts:
 
 1. "hp.obo"
 This file is the Human Phenotype Ontology (HPO) in obo format.
@@ -26,17 +25,19 @@ PS174050	617875	4041	LRP5
 PS174050	617874	79053	ALG8
 
 
-The first script to run is Sim_calc.py, it requires the 3 input files mentioned above. This program calculates similarities of all possible pairs of diseases present in PS. The similarities are based on the annotation terms of the diseases. It also calculates the informational content of each term
-1. the hp.obo is the human phenotype ontology
-2. the file with annotated diseases (MIM code)
-3. the file with Phenotypic Series.
+OUTPUTS of the two scripts
 
-The first script calculates and print as txt output 3 files:
-1. the informational content of used hp term
-2. the list of valid MIM
+The first script to run is "Sim_calc.py", it requires the 3 input files mentioned above. This program calculates similarities of all possible pairs of diseases present in PS, based on the annotation terms of the diseases. It also calculates and returns the Informational Content (IC) of each term of annotation.
+The outputs are: 
+
+1. the list of valid MIM (diseases of PS with valid annotation);
+2. the list of terms of annotation with their IC;
 3. the file enlisting all possible pair of MIM and their value of similarity
 
-The second script needs as input:
+The second script to run is "Analysis_of_similarity.py", it starts from the calculated similarities and calculates and returns some statistics
+
+
+requires the 3 input files mentioned above.
 1. the list of all similarities
 2. the list of valid MIM
 3. the file with Phenotypic Series.
