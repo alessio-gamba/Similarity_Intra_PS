@@ -1,3 +1,5 @@
+##Similarity intra Phenotypic Series
+
 The datasets reported in the enclosed files have been generated and analyzed, as described in the manuscript entitled ‘The Similarity of Inherited Diseases (I): Clinical Similarity Within the Phenotypic Series’ by Gamba A, Salmona M and Bazzoni G (Submitted to BMC Medical Genomics, Revised December 4, 2020)
 
 A. SQL folder
@@ -35,7 +37,8 @@ A.2 The following outputs generated in SQL
 
 
 
-B. Python code:
+B. Python folder
+
 The two Python scripts, "Sim_calc.py" and "Analysis_of_similarity.py", produce the outputs provided in this folder.
 The scripts are written for Python 3, but they can work also in Python 2 with few minor changes.
 
