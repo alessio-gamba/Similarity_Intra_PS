@@ -28,20 +28,14 @@ PS174050	617874	79053	ALG8
 OUTPUTS of the two scripts
 
 The first script to run is "Sim_calc.py", it requires the 3 input files mentioned above. This program calculates similarities of all possible pairs of diseases present in PS, based on the annotation terms of the diseases. It also calculates and returns the Informational Content (IC) of each term of annotation.
-The outputs are: 
+The outputs are:
 
 1. the list of valid MIM (diseases of PS with valid annotation);
 2. the list of terms of annotation with their IC;
-3. the file enlisting all possible pair of MIM and their value of similarity
+3. the file enlisting all possible pair of MIM and their value of similarity;
 
-The second script to run is "Analysis_of_similarity.py", it starts from the calculated similarities and calculates and returns some statistics
+The second script to run is "Analysis_of_similarity.py", starting from the calculated similarities, it calculates and returns some statistics on PS.
+The outputs are:
 
-
-requires the 3 input files mentioned above.
-1. the list of all similarities
-2. the list of valid MIM
-3. the file with Phenotypic Series.
-
-It calculates some statistics, returned in two files:
 1. the mean similarities in PS
-2. the max similarities of each MIM
+2. the max similarities of each disease
