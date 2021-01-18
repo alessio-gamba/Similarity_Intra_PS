@@ -1,8 +1,8 @@
-##Similarity intra Phenotypic Series
+# Similarity intra Phenotypic Series
 
 The datasets reported in the enclosed files have been generated and analyzed, as described in the manuscript entitled ‘The Similarity of Inherited Diseases (I): Clinical Similarity Within the Phenotypic Series’ by Gamba A, Salmona M and Bazzoni G (Submitted to BMC Medical Genomics, Revised December 4, 2020)
 
-A. SQL folder
+## A. SQL folder
 
 A.1 The file similarity_intra_ps_sql.docx contains
 
@@ -36,8 +36,7 @@ A.2 The following outputs generated in SQL
 
 
 
-
-B. Python folder
+## B. Python folder
 
 The two Python scripts, "Sim_calc.py" and "Analysis_of_similarity.py", produce the outputs provided in this folder.
 The scripts are written for Python 3, but they can work also in Python 2 with few minor changes.
@@ -71,13 +70,13 @@ OUTPUTS of the two scripts
 The first script to run is "Sim_calc.py", it requires the 3 input files mentioned above. This program calculates similarities of all possible pairs of diseases present in PS, based on the annotation terms of the diseases. It also calculates and returns the Informational Content (IC) of each term of annotation.
 The outputs are:
 
-1. the list of valid MIM (diseases of PS with valid annotation);
-2. the list of terms of annotation with their IC;
-3. the file enlisting all possible pair of MIM and their value of similarity;
+1. "Ann_MIM.txt" are the valid MIM (diseases of PS with valid annotation);
+2. "out_ic.txt" are the terms of annotation with their IC;
+3. "Similarities.zip" are all possible pair of MIM and their value of similarity.
 
 The second script to run is "Analysis_of_similarity.py", starting from the calculated similarities, it calculates and returns some statistics on PS.
 The outputs are:
 
-1. "Sim_mean.txt" the mean similarities in PS
-2. "Sim_max.txt" the max similarities of each disease
+1. "Sim_mean.txt" the mean similarities in PS;
+2. "Sim_max.txt" the max similarities of each disease.
  
