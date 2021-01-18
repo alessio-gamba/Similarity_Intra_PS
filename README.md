@@ -32,27 +32,49 @@ A.2 The following outputs generated in SQL
   A.2.2 File 'ddsn_c.txt' is the complete DDSN-C with 2,116 N (D as OMIM identifers) and 624,610 E (as Di-Dj pairs). It is derived from table ddsn of module A.1.6.3 of SQL.
   The columns are mim_id_i (the first D or Di), ic_mean (the average of the IC of the shared DP) and mim_id_j (the second D or Dj).
 
+
+
+
+B. Python code:
+The two Python scripts, "Sim_calc.py" and "Analysis_of_similarity.py", produce the outputs provided in this folder.
+The scripts are written for Python 3, but they can work also in Python 2 with few minor changes.
+
+INPUTS for the two scripts:
+
+1. "hp.obo"
+This file is the Human Phenotype Ontology (HPO) in obo format.
+It is not provided here because it is freely available at HPO site.
+
+2. "OMIM_ALL_FREQUENCIES_diseases_to_genes_to_phenotypes.txt"
+This file provides OMIM diseases with their terms of annotations (one or more terms for each disease).
+It is not provided here because it is freely available at
+
+3. "PhenSer.txt"
+This file enlists OMIM Phenotypic Series (PS) with their associated diseases (with MIM code). This information is available on the OMIM site (www.omim.org) and the complete list of PS can be obtained upon request to OMIM team. For this reason the file is not provided here.
+The file must be formatted in 4 columns tab-separated, that are:
+1. The PS identifier
+2. the MIM identifier
+3. the Entrez identifier of the gene associated to disease
+4. the Symbol of the Entrez.
+Here an example of the PS 174050 with its 3 associated diseases:
+
+PS174050	174050	5589	PRKCSH
+PS174050	617875	4041	LRP5
+PS174050	617874	79053	ALG8
+
+
+OUTPUTS of the two scripts
+
+The first script to run is "Sim_calc.py", it requires the 3 input files mentioned above. This program calculates similarities of all possible pairs of diseases present in PS, based on the annotation terms of the diseases. It also calculates and returns the Informational Content (IC) of each term of annotation.
+The outputs are:
+
+1. the list of valid MIM (diseases of PS with valid annotation);
+2. the list of terms of annotation with their IC;
+3. the file enlisting all possible pair of MIM and their value of similarity;
+
+The second script to run is "Analysis_of_similarity.py", starting from the calculated similarities, it calculates and returns some statistics on PS.
+The outputs are:
+
+1. "Sim_mean.txt" the mean similarities in PS
+2. "Sim_max.txt" the max similarities of each disease
  
-  B. Python code:
-  
-  The first script is 'Sim_calculator.py' (running under Python 2).
-  
-  It generates a very big file (58 MB) with similarities calculated between all the possible pairs of OMIM Diseases.
-  Similarities are calculated based on the HPO annotation of diseases.
-  The file with similarities is necessary to proceed in the analysis.
-
-  The second script is 'Analysis_of_similarity.py' (running under Python 2).
-  
-  It generates two files: 'Sim_mean.txt' and 'Sim_max.txt' (now in the outputs folder).
-
-  The two Python scripts require three input files (not provided here, but publicly available):
-  
-  1. hp.obo
-  
-  2. OMIM_ALL_FREQUENCIES_diseases_to_genes_to_phenotypes.txt
-  
-  3. PhenSer.txt
-  
-  Files 1 and 2 are the HPO ontology and the list of diseases with their terms of annotation, respectively. They can be downloaded from the HPO web site.
-  
-  File 3 indicates how some OMIM diseases are grouped in Phenotypic Series. It is available from the OMIM team upon request.
