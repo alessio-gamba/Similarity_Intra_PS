@@ -57,6 +57,7 @@ The outputs are:
 1. "Ann_MIM.txt" are the valid MIM (diseases of PS with valid annotation);
 2. "out_ic.txt" are the terms of annotation with their IC;
 3. "Similarities.zip" are all possible pair of MIM and their value of similarity.
+
 The second script to run is "Analysis_of_similarity.py", starting from the calculated similarities, it calculates and returns some statistics about PS.
 The outputs are:
 1. "Sim_mean.txt" the mean similarities among MIM in PS compared to random similarities;
