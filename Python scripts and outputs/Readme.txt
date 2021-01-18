@@ -1,4 +1,4 @@
-One of the required input for the two scripts is "PhenSer.txt". This file must be formatted in 4 columns tab-separated:
+One of the required input for the two scripts is "PhenSer.txt". This file is formatted with 4 columns tab-separated but the last two are not mandatory:
 
 1. PS identifier
 2. MIM identifier
