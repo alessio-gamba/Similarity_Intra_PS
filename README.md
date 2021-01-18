@@ -61,5 +61,5 @@ The outputs are:
 The second script to run is "Analysis_of_similarity.py", starting from the calculated similarities, it calculates and returns some statistics about PS.
 The outputs are:
 1. "Sim_mean.txt" the mean similarities among MIM in PS compared to random similarities;
-2. "Sim_max.txt" the max similarities of each MIM in PS.
+2. "Sim_max.txt" the maximal similarities of each MIM.
  
