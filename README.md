@@ -1,4 +1,4 @@
-## Similarity intra Phenotypic Series
+## The Similarity intra Phenotypic Series
 
 The datasets reported in the enclosed files have been generated and analyzed, as described in the manuscript entitled ‘The Similarity of Inherited Diseases (I): Clinical Similarity Within the Phenotypic Series’ by Gamba A, Salmona M and Bazzoni G (Submitted to BMC Medical Genomics, Revised December 4, 2020)
 
