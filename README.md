@@ -36,29 +36,20 @@ A.2 The following outputs generated in SQL
 
 
 
+
 ### B. Python folder
 
-The two Python scripts, "Sim_calc.py" and "Analysis_of_similarity.py", produce the outputs provided in this folder.
-The scripts are written for Python 3, but they can work also in Python 2 with few minor changes.
+The two scripts, "Sim_calc.py" and "Analysis_of_similarity.py", are written for Python 3 (or Python 2 with few minor changes).
+All the generated outputs are also provided in the Python folder.
 
-INPUTS for the two scripts:
 
-1. "hp.obo"
-This file is the Human Phenotype Ontology (HPO) in obo format.
-It is not provided here because it is freely available at HPO site.
+INPUTS for the two scripts
 
-2. "OMIM_ALL_FREQUENCIES_diseases_to_genes_to_phenotypes.txt"
-This file provides OMIM diseases with their terms of annotations (one or more terms for each disease).
-It is not provided here because it is freely available at
+1. "hp.obo". This file is the Human Phenotype Ontology (HPO) in obo format. It is not provided here because it is freely available at HPO site (https://hpo.jax.org/app/).
 
-3. "PhenSer.txt"
-This file enlists OMIM Phenotypic Series (PS) with their associated diseases (with MIM code). This information is available on the OMIM site (www.omim.org) and the complete list of PS can be obtained upon request to OMIM team. For this reason the file is not provided here.
-The file must be formatted in 4 columns tab-separated: PS identifier, MIM identifier, Entrez identifier (of disease gene), Symbol.
-Here an example of the PS 174050 with its 3 associated diseases:
+2. "OMIM_ALL_FREQUENCIES_diseases_to_genes_to_phenotypes.txt". This file provides OMIM diseases with their terms of annotations (one or more terms for each disease). It is not provided here because it is freely available as HPO.
 
-PS174050	174050	5589	PRKCSH
-PS174050	617875	4041	LRP5
-PS174050	617874	79053	ALG8
+3. "PhenSer.txt". This file enlists OMIM Phenotypic Series (PS) with their associated diseases (with MIM code). This information is available on the OMIM site (www.omim.org) and the complete list of PS can be obtained upon request to OMIM team. For this reason the file is not provided here.
 
 
 OUTPUTS of the two scripts
@@ -70,9 +61,9 @@ The outputs are:
 2. "out_ic.txt" are the terms of annotation with their IC;
 3. "Similarities.zip" are all possible pair of MIM and their value of similarity.
 
-The second script to run is "Analysis_of_similarity.py", starting from the calculated similarities, it calculates and returns some statistics on PS.
+The second script to run is "Analysis_of_similarity.py", starting from the calculated similarities, it calculates and returns some statistics about PS.
 The outputs are:
 
-1. "Sim_mean.txt" the mean similarities in PS;
-2. "Sim_max.txt" the max similarities of each disease.
+1. "Sim_mean.txt" the mean similarities among MIM in PS compared to random similarities;
+2. "Sim_max.txt" the max similarities of each MIM in PS.
  
